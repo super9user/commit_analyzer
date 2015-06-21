@@ -1,0 +1,39 @@
+<div class="filter">
+	<select class="user" style="width:200px;" name="user">
+	</select>
+	<select class="branch" name="branch" style="width:200px;">
+		<!-- TODO - get this from data providers -->
+		<option value="">Select Branch</option>
+		<option value="1-2-stable">1-2-stable</option>
+		<option value="2-0-stable">2-0-stable</option>
+		<option value="2-1-stable">2-1-stable</option>
+		<option value="2-2-stable">2-2-stable</option>
+		<option value="2-3-stable">2-3-stable</option>
+		<option value="3-0-test-i18n">3-0-test-i18n</option>
+		<option value="master">Master</option>
+	</select>
+	<select class="day" name="day" style="width:200px;">
+		<option value="">Select Day of Week</option>
+		<option value="2">Monday</option>
+		<option value="3">Tuesday</option>
+		<option value="4">Wednesday</option>
+		<option value="5">Thursday</option>
+		<option value="6">Friday</option>
+		<option value="7">Saturday</option>
+		<option value="1">Sunday</option>
+	</select>
+	<input type="text" name="daterange" class="daterangepicker data" id="inputEmail3" placeholder="Date Range" />
+	<label class="radio-inline">
+		<input type="radio" name="inlineRadioOptionsBudget" value="daily">Daily
+	</label>
+	<label class="radio-inline">
+		<input type="radio" name="inlineRadioOptionsBudget" value="hourly">Hourly
+	</label>
+	<div class="btn btn-primary generate">Generate</div>
+</div>
+<div class="report">
+</div>
+<%= javascript_tag do %>
+$(document).ready(function(){
+});
+<% end %>
