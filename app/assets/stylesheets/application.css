@@ -12,4 +12,10 @@
  *
  *= require_tree .
  *= require_self
+
+ *= require libs/bootstrap
+ *= require libs/select2.min
+ *= require libs/daterangepicker
+
+ 
  */
