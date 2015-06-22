@@ -12,20 +12,19 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require libs/bootstrap
+//= require bootstrap
 //= require turbolinks
-//= require libs/select2.full
-//= require libs/moment
-//= require libs/daterangepicker
-//= require libs/underscore
+//= require select2.full
+//= require moment
+//= require daterangepicker
+//= require underscore
 
-
-//= require libs/highstock
-//= require libs/highcharts-more
-//= require libs/highcharts-solid-gauge
-//= require libs/highcharts-no-data-to-display
-//= require libs/highcharts-3d
-//= require libs/highcharts-drilldown
+//= require highstock
+//= require highcharts-more
+//= require highcharts-solid-gauge
+//= require highcharts-no-data-to-display
+//= require highcharts-3d
+//= require highcharts-drilldown
 
 params = {};
 $(document).ready(function(){
@@ -132,7 +131,7 @@ $(document).ready(function(){
 							},
 							tooltip: {
 								formatter: function(){
-									var output = '';									
+									var output = '';
 									if(params.type=="daily"){
 										output = '<b>' + Highcharts.dateFormat('%A, %b %e, %Y', this.x) + '</b>';
 									}else{
