@@ -1,5 +1,5 @@
 <snippet>
-  <content>
+<content>
 # Welcome to Commit Analyzer
 
 TODO - Write Description
