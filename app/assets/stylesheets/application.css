@@ -18,3 +18,10 @@
  *= require daterangepicker
 
  */
+
+.ca-panel {
+   width: 50%;
+   min-height: 80vh;
+   margin: 0 auto;
+   margin-top: 40px;
+}

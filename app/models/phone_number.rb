@@ -10,6 +10,7 @@ class PhoneNumber
 	belongs_to :user
 
 	validates :ph_number, :phone_type, presence: true
+	validates_uniqueness_of :ph_number, :scope => :user_id
 	validates_format_of :ph_number, with: /\A(?<num>\d+)\z/
   
 end

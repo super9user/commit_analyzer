@@ -1,0 +1,34 @@
+<%= form_for(@api_configuration) do |f| %>
+	<% if @api_configuration.errors.any? %>
+
+		<table class="table table-condensed">
+			<h4><%= pluralize(@api_configuration.errors.count, "error") %> prohibited this Api Configuration from being saved:</h4>
+			<tr>
+				<th>#</th>
+				<th>Error</th>
+			</tr>
+
+			<% @api_configuration.errors.full_messages.each_with_index do |message, i| %>
+				<tr>
+					<td><%= i + 1 %></td>
+					<td><%= message %></td>
+				</tr>
+			<% end %>
+		</table>
+	<% end %>
+
+	<div class="field form-group">
+		<%= f.label :client_id %><br>
+		<%= f.text_field :client_id, class: "form-control" %>
+	</div>
+
+	<div class="field form-group">
+		<%= f.label :client_secret %><br>
+		<%= f.text_field :client_secret, class: "form-control" %>
+	</div>
+
+	<div class="actions">
+		<%= f.submit "Submit", class: "btn btn-primary" %>
+	</div>
+
+<% end %>
